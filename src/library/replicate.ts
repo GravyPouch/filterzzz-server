@@ -27,7 +27,7 @@ export async function pushImage(imgName, filter) {
     style: promptInput.style,
     prompt: promptInput.prompt,
     instant_id_strength: promptInput.instant_id_strength,
-***REMOVED***;
+  };
 
   const output = await replicate.run(model, { input });
 
@@ -35,9 +35,9 @@ export async function pushImage(imgName, filter) {
 
   console.log(output);
 
-  if (output***REMOVED***0***REMOVED***) {
-    return output***REMOVED***0***REMOVED***;
-***REMOVED*** else {
+  if (output[0]) {
+    return output[0];
+  } else {
     return "error";
-***REMOVED***
+  }
 }

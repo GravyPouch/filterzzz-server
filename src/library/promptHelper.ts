@@ -21,7 +21,7 @@ export async function FindPrompt(id) {
 }
 
 export async function FilterPrompt(prompts) {
-  let filterd = ***REMOVED******REMOVED***;
+  let filterd = [];
 
   prompts.forEach((prompt) => {
     filterd.push({
@@ -29,8 +29,9 @@ export async function FilterPrompt(prompts) {
       name: prompt.name,
       displayName: prompt.displayName,
       image: prompt.image,
-***REMOVED***);
-***REMOVED***);
+      gallery: prompt.gallery,
+    });
+  });
 
   return filterd;
 }

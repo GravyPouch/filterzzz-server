@@ -1,39 +1,39 @@
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-    "images": ***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-    "images": ***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+[
+  {
+    "id": "6902",
+    "name": "ps2",
+    "displayName": "PS2ify",
+    "image": "https://i.kym-cdn.com/photos/images/original/002/778/491/0c3.png",
+    "gallery": [
+      "https://i.kym-cdn.com/photos/images/newsfeed/002/778/488/b39.png",
+      "https://i.kym-cdn.com/photos/images/newsfeed/002/778/491/0c3.png",
+      "https://i.kym-cdn.com/photos/images/original/002/778/511/dec.jpg",
+      "https://i.kym-cdn.com/photos/images/newsfeed/002/778/493/f59.png"
+    ],
+    "desc": "Turn any photo into a instant classic.",
+    "input": {
+      "model": "fofr/face-to-many:35cea9c3164d9fb7fbd48b51503eabdb39c9d04fdaef9a68f368bed8087ec5f9",
+      "style": "Video game",
+      "prompt": "pixelated glitchart of close-up of {subject}, ps2 playstation psx gamecube game gta, dreams screencapture, bryce 3d --style ddCHhSumaNyOrL1Q",
+      "instant_id_strength": 0.8
+    }
+  },
+  {
+    "id": "7842",
+    "name": "minecraft",
+    "displayName": "Mineify",
+    "image": "https://i.pinimg.com/originals/78/c8/d1/78c8d1962cd9ade2be59a35fdd9c8c1e.jpg",
+    "gallery": [
+      "https://i.kym-cdn.com/photos/images/newsfeed/002/778/488/b39.png",
+      "https://i.kym-cdn.com/photos/images/newsfeed/002/778/491/0c3.png",
+      "https://i.kym-cdn.com/photos/images/original/002/778/511/dec.jpg",
+      "https://i.kym-cdn.com/photos/images/newsfeed/002/778/493/f59.png"
+    ],
+    "input": {
+      "model": "fofr/face-to-many:35cea9c3164d9fb7fbd48b51503eabdb39c9d04fdaef9a68f368bed8087ec5f9",
+      "style": "Video game",
+      "prompt": "glitchart of close-up of {subject}, video game, game minecraft, blocks, grass in background, hazy, bryce 3d --style ddCHhSumaNyOrL1Q",
+      "instant_id_strength": 0.8
+    }
+  }
+]
