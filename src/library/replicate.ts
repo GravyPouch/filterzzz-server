@@ -1,11 +1,18 @@
 import Replicate from "replicate";
 const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN });
 import { promises as fs } from "fs";
+import { FindPrompt } from "./promptHelper";
 
-export async function pushImage(imgName) {
+export async function pushImage(imgName, filter) {
   console.log(imgName);
 
-  const path = `uploads/${imgName}.png`;
+  const prompt = await FindPrompt(filter);
+
+  const promptInput = prompt.input;
+
+  console.log(promptInput);
+
+  const path = `uploads/${imgName}.jpg`;
   const data = await fs.readFile(path);
   // Convert the buffer into a base64-encoded string
   const base64 = data.toString("base64");
@@ -14,14 +21,12 @@ export async function pushImage(imgName) {
   // Create the data URI
   const dataURI = `data:${mimeType};base64,${base64}`;
 
-  const model =
-    "fofr/face-to-many:35cea9c3164d9fb7fbd48b51503eabdb39c9d04fdaef9a68f368bed8087ec5f9";
+  const model = promptInput.model;
   const input = {
     image: dataURI,
-    style: "Video game",
-    prompt:
-      "pixelated glitchart of close-up of {subject}, ps2 playstation psx gamecube game gta, dreams screencapture, bryce 3d --style ddCHhSumaNyOrL1Q",
-    instant_id_strength: 0.8,
+    style: promptInput.style,
+    prompt: promptInput.prompt,
+    instant_id_strength: promptInput.instant_id_strength,
 ***REMOVED***;
 
   const output = await replicate.run(model, { input });
