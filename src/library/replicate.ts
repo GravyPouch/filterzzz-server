@@ -26,6 +26,7 @@ export async function pushImage(imgName, filter) {
     image: dataURI,
     style: promptInput.style,
     prompt: promptInput.prompt,
+    image_to_become: promptInput.image_to_become,
     instant_id_strength: promptInput.instant_id_strength,
   };
 
