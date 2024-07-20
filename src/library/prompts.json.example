@@ -1,0 +1,21 @@
+[
+  {
+    "id": "999",
+    "name": "example",
+    "displayName": "example",
+    "image": "http://www.google.com/example.png",
+    "gallery": [
+      "http://www.google.com/example.png",
+      "http://www.google.com/example.png",
+      "http://www.google.com/example.png",
+      "http://www.google.com/example.png"
+    ],
+    "desc": "Your desc here",
+    "input": {
+      "model": "Replicate Model ID",
+      "style": "Style Param",
+      "prompt": "Prompt",
+      "instant_id_strength": 0
+    }
+  }
+]
